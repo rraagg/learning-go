@@ -1,6 +1,9 @@
 package main
 
-import "github.com/rraagg/learning-go/chapterTwo"
+import (
+	"github.com/rraagg/learning-go/chapterThree"
+	"github.com/rraagg/learning-go/chapterTwo"
+)
 
 func main() {
 	// chapterTwo.ZeroValue()
@@ -12,5 +15,5 @@ func main() {
 	// chapterTwo.BooleanLiteral()
 	// chapterTwo.IntegerTypes()
 	chapterTwo.DeclarationList()
-	chapterThree.arrays()
+	chapterThree.Arrays()
 }

@@ -2,6 +2,6 @@ package chapterThree
 
 import "fmt"
 
-func arrays() {
+func Arrays() {
 	fmt.Println("Arrays are rarely used")
 }
