@@ -64,5 +64,5 @@ func DeclarationList() {
 		x int    = 1
 		y string = "One"
 	)
-	fmt.Printf("Declaration List: %v and %s", x, y)
+	fmt.Printf("Declaration List: %v and %s\n", x, y)
 }

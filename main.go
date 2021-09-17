@@ -1,10 +1,5 @@
 package main
 
-import (
-	"github.com/rraagg/learning-go/chapterThree"
-	"github.com/rraagg/learning-go/chapterTwo"
-)
-
 func main() {
 	// chapterTwo.ZeroValue()
 	// chapterTwo.IntegerLiteral()
@@ -14,6 +9,18 @@ func main() {
 	// chapterTwo.RawStringLiteral()
 	// chapterTwo.BooleanLiteral()
 	// chapterTwo.IntegerTypes()
-	chapterTwo.DeclarationList()
-	chapterThree.Arrays()
+	// chapterTwo.DeclarationList()
+	// chapterThree.Arrays()
+	// chapterThree.Slices()
+	// chapterThree.SliceOfSlice()
+	// chapterThree.MakedSlice()
+	// chapterThree.DeclaredSlices()
+	// chapterThree.CopyArrayToSlice()
+	// chapterThree.StringsAndRunesAndBytes()
+	// chapterThree.Utf8()
+	// chapterThree.DeclaringMaps()
+	// chapterThree.DeleteFromMap()
+	//chapterThree.Structs()
+	//chapterThree.AnonymousStruct()
+	chapterFour.FloatingPointLiteral()
 }
