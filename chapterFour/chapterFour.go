@@ -70,7 +70,9 @@ func WhichForLoop() {
 
 func SwitchStatement() {
 	str := `
-By default, cases in switch statements don't fall through'	
+By default, cases in switch statements don't fall through'
+In Go, An empty case means nothing happens.
+Blank switches do not specify the value that you are comparing against.
 	`
 	fmt.Println(str)
 
@@ -92,6 +94,32 @@ By default, cases in switch statements don't fall through'
 		case 6, 7, 8, 9:
 		default:
 			fmt.Println(word, "is a long word")
+		}
+	}
+}
+
+func BlankSwitches() {
+
+	str := `
+By default, cases in switch statements don't fall through'
+In Go, An empty case means nothing happens.
+Blank switches do not specify the value that you are comparing against.
+	`
+	fmt.Println(str)
+
+	words := []string{
+		"hi",
+		"salutations",
+		"hello",
+	}
+	for _, word := range words {
+		switch wordLen := len(word); {
+		case wordLen < 5:
+			fmt.Println(word, "is a short word")
+		case wordLen > 10:
+			fmt.Println(word, "is a long word")
+		default:
+			fmt.Println(word, "is exactly the right length")
 		}
 	}
 }

@@ -1,26 +1,9 @@
 package main
 
+import (
+	"github.com/rraagg/learning-go/chapterFour"
+)
+
 func main() {
-	// chapterTwo.ZeroValue()
-	// chapterTwo.IntegerLiteral()
-	// chapterTwo.FloatingPointLiteral()
-	// chapterTwo.RuneLiteral()
-	// chapterTwo.StringLiteral()
-	// chapterTwo.RawStringLiteral()
-	// chapterTwo.BooleanLiteral()
-	// chapterTwo.IntegerTypes()
-	// chapterTwo.DeclarationList()
-	// chapterThree.Arrays()
-	// chapterThree.Slices()
-	// chapterThree.SliceOfSlice()
-	// chapterThree.MakedSlice()
-	// chapterThree.DeclaredSlices()
-	// chapterThree.CopyArrayToSlice()
-	// chapterThree.StringsAndRunesAndBytes()
-	// chapterThree.Utf8()
-	// chapterThree.DeclaringMaps()
-	// chapterThree.DeleteFromMap()
-	//chapterThree.Structs()
-	//chapterThree.AnonymousStruct()
-	chapterFour.FloatingPointLiteral()
+	chapterFour.BlankSwitches()
 }
