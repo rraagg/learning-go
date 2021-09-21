@@ -1,9 +1,14 @@
 package main
 
 import (
-	"github.com/rraagg/learning-go/chapterFour"
+	"github.com/rraagg/learning-go/chapterFive"
 )
 
 func main() {
-	chapterFour.BlankSwitches()
+	chapterFive.DeclaringFunctions()
+	chapterFive.MyFunc(chapterFive.MyFuncOpts{
+		FirstName: "Rob",
+		LastName:  "Gallagher",
+		Age:       44,
+	})
 }
