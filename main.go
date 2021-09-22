@@ -7,8 +7,10 @@ import (
 func main() {
 	chapterFive.DeclaringFunctions()
 	chapterFive.MyFunc(chapterFive.MyFuncOpts{
-		FirstName: "Rob",
-		LastName:  "Gallagher",
-		Age:       44,
+		FirstName: "Barack",
+		LastName:  "Obama",
+		Age:       59,
 	})
+	chapterFive.VariadicParameters("Barack", "Michelle")
+
 }

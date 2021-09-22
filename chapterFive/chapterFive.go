@@ -6,6 +6,13 @@ type MyFuncOpts struct {
 	FirstName string
 	LastName  string
 	Age       int
+	Address   string
+}
+
+type CurrentOpts struct {
+	FirstName string
+	LastName  string
+	Age       int
 }
 
 func DeclaringFunctions() {
