@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/rraagg/learning-go/chapterFive"
+	"github.com/rraagg/learning-go/chapterSix"
 )
 
 func main() {
@@ -37,4 +38,5 @@ func main() {
 	m := myfuncOpts
 	chapterFive.CallByValue(i, s, m)
 	fmt.Println(i, s, m)
+	chapterSix.Pointers()
 }
