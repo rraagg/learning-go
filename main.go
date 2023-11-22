@@ -1,42 +1,24 @@
 package main
 
 import (
+	"chapterTwelve"
+	"context"
 	"fmt"
-
-	"github.com/rraagg/learning-go/chapterFive"
-	"github.com/rraagg/learning-go/chapterSix"
 )
 
+func logic(ctx context.Context, info string) (string, error) {
+	fmt.Printf("I did some interesting %s \n", info)
+	return "finished", nil
+}
+
 func main() {
-	chapterFive.DeclaringFunctions()
-	myfuncOpts := chapterFive.MyFuncOpts{
-		FirstName: "Barack",
-		LastName:  "Obama",
-		Age:       59,
-		Address:   "Chicago",
+	ss := chapterTwelve.SlowServer()
+	fmt.Println("hello")
+
+	ctx := context.Background()
+	logicResult, err := logic(ctx, "stuff")
+	if err != nil {
+		fmt.Println(err.Error())
 	}
-	currentOpts := chapterFive.CurrentOpts{
-		FirstName: "Barack",
-		LastName:  "Obama",
-		Age:       59,
-	}
-
-	chapterFive.VariadicParameters("Barack", "Michelle")
-	optsID := make(map[chapterFive.CurrentOpts]chapterFive.MyFuncOpts)
-	optsID[currentOpts] = myfuncOpts
-	currentOpts.FirstName = "Michelle"
-
-	fmt.Println(currentOpts)
-	fmt.Println(optsID[currentOpts])
-
-	first, age := chapterFive.MultipleReturnValues(myfuncOpts, "Obam")
-	fmt.Println(first, age)
-
-	chapterFive.BirthDateValidator()
-	i := 10
-	s := "No change"
-	m := myfuncOpts
-	chapterFive.CallByValue(i, s, m)
-	fmt.Println(i, s, m)
-	chapterSix.Pointers()
+	fmt.Println(logicResult)
 }
