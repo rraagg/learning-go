@@ -5,6 +5,8 @@ import (
 	"os"
 	"testing"
 	"time"
+
+	"github.com/google/go-cmp/cmp"
 )
 
 var testTime time.Time
@@ -50,5 +52,19 @@ func Test_addNumbers(t *testing.T) {
 	result := addNumbers(2, 3)
 	if result != 5 {
 		t.Errorf("Expected 5, but got %d", result)
+	}
+}
+
+func TestCreatePerson(t *testing.T) {
+	comparer := cmp.Comparer(func(x, y Person) bool {
+		return x.Name == y.Name && x.Age == y.Age
+	})
+	expected := Person{
+		Name: "Dennis",
+		Age:  37,
+	}
+	result := CreatePerson("Dennis", 37)
+	if diff := cmp.Diff(expected, result, comparer); diff != "" {
+		t.Errorf("Mismatch (-expected +result):\n%s", diff)
 	}
 }
