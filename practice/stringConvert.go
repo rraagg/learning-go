@@ -14,3 +14,9 @@ func StringToInt() {
 	fmt.Printf("%v = %T\n", n, n)
 	fmt.Printf("%v = %T\n", k, k)
 }
+
+func StringToAltBaseInt() {
+	s := "1604"
+	i, _ := strconv.ParseInt(s, 8, 0)
+	fmt.Printf("%o\n", i)
+}
