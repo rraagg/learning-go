@@ -20,3 +20,9 @@ func StringToAltBaseInt() {
 	i, _ := strconv.ParseInt(s, 8, 0)
 	fmt.Printf("%o\n", i)
 }
+
+func IntToString() {
+	int := 42
+	s := strconv.Itoa(int)
+	fmt.Println(s)
+}
