@@ -26,3 +26,13 @@ func IntToString() {
 	s := strconv.Itoa(int)
 	fmt.Println(s)
 }
+
+func FormatInt() {
+	x := int64(345)
+	s := strconv.FormatInt(x, 10)
+	fmt.Printf("%T, %v\n", s, s)
+
+	b := int64(-1024)
+	t := strconv.FormatInt(b, 2)
+	fmt.Printf("%T, %v\n", t, t)
+}

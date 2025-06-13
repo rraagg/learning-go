@@ -6,4 +6,5 @@ func main() {
 	practice.StringToInt()
 	practice.StringToAltBaseInt()
 	practice.IntToString()
+	practice.FormatInt()
 }
