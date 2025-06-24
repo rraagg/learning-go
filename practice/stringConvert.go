@@ -36,3 +36,9 @@ func FormatInt() {
 	t := strconv.FormatInt(b, 2)
 	fmt.Printf("%T, %v\n", t, t)
 }
+
+func AppendInt() {
+	b := []byte("What are we appending?: ")
+	b = strconv.AppendInt(b, 22, 10)
+	fmt.Printf("%v\n", string(b))
+}
