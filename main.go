@@ -8,4 +8,5 @@ func main() {
 	practice.IntToString()
 	practice.FormatInt()
 	practice.AppendInt()
+	practice.ParseFloat()
 }

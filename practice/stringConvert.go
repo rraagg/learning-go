@@ -42,3 +42,9 @@ func AppendInt() {
 	b = strconv.AppendInt(b, 22, 10)
 	fmt.Printf("%v\n", string(b))
 }
+
+func ParseFloat() {
+	n := "3.1415926535"
+	f, err := strconv.ParseFloat(n, 64)
+	fmt.Printf("%v - %T - %v\n", f, f, err)
+}
